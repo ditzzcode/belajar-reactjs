@@ -1,7 +1,7 @@
-export default function Main() {
+export default function Main({main}) {
   return (
     <div>
-      <h1>ini halaman Main</h1>
+      <h1>{main}</h1>
     </div>
   )
 }

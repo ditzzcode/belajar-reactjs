@@ -1,7 +1,7 @@
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <div>
-      <h1>Ini halaman Navbar</h1>
+      <h1>{props.nav}</h1>
     </div>
   )
 }
