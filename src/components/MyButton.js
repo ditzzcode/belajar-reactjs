@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useState , useEffect} from "react"
 
 export default function MyButton(){
 const [getValue = 0, setValue] = useState(0)
 const [getWord , setWord] = useState("")
+
 
   const plus = () => {
     setValue(getValue + 1)
@@ -19,7 +20,9 @@ const [getWord , setWord] = useState("")
     }
   }
 
-
+useEffect(() => {
+  console.log("angka berubah menjadi" , + getValue)
+} , [getValue]);
 
   return (
     <div>
