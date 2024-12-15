@@ -5,6 +5,7 @@ import Footer from './Footer';
 import MyButton from './components/MyButton';
 import Conditional from './components/Conditional';
 import { useEffect } from 'react';
+import Lifecyles from './components/Lifecyles.js';
 
 function App() {
   const nav = "ini halaman Header";
@@ -21,7 +22,7 @@ function App() {
     <Footer footerText={footerText}/>
     <MyButton/>
     <Conditional login={true} title={"Selamat datang"}/>
-
+    <Lifecyles/>
     </>
   );
 }
