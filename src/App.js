@@ -6,6 +6,7 @@ import MyButton from './components/MyButton';
 import Conditional from './components/Conditional';
 import { useEffect } from 'react';
 import Lifecyles from './components/Lifecyles.js';
+import Click from './components/Click.js';
 
 function App() {
   const nav = "ini halaman Header";
@@ -23,6 +24,7 @@ function App() {
     <MyButton/>
     <Conditional login={true} title={"Selamat datang"}/>
     <Lifecyles/>
+    <Click/>
     </>
   );
 }
