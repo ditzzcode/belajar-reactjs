@@ -1,4 +1,4 @@
-import { memo  , useEffect} from 'react'
+import { memo  , useEffect } from 'react'
 
 function ChildComponents({increment , count}) {
   return (

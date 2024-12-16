@@ -6,6 +6,7 @@ import MyButton from './components/MyButton';
 import Conditional from './components/Conditional';
 import { useEffect } from 'react';
 import ParentComponents from './useCallback/ParentCompontents';
+import ExpensiveComponent from './UseMemo/ExpensiveComponent';
 
 function App() {
   const nav = "ini halaman Header";
@@ -23,6 +24,7 @@ function App() {
     <MyButton/>
     <Conditional login={true} title={"Selamat datang"}/>
     <ParentComponents/>
+      <ExpensiveComponent/>
     </>
   );
 }
