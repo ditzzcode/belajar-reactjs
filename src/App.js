@@ -5,6 +5,10 @@ import Footer from './Footer';
 import MyButton from './components/MyButton';
 import Conditional from './components/Conditional';
 import { useEffect } from 'react';
+import GetName from './components/GetName';
+import EventsObject from './components/EventsObj';
+import ChangeInput from './ChangeInput';
+import NoReload from './NoReload';
 
 function App() {
   const nav = "ini halaman Header";
@@ -14,6 +18,10 @@ function App() {
     console.log("render!")
   } , [])
 
+  const clicked = () => {
+    alert("button di klick")
+  }
+
   return (
     <>
     <Navbar nav={nav}/>
@@ -21,7 +29,11 @@ function App() {
     <Footer footerText={footerText}/>
     <MyButton/>
     <Conditional login={true} title={"Selamat datang"}/>
-
+    <button onClick={ () => clicked()}>Click me</button>
+    <GetName name={"radit"}/>
+    <EventsObject/>
+    <ChangeInput/>
+    <NoReload/>
     </>
   );
 }
