@@ -1,23 +1,24 @@
 import { useState , useMemo } from "react";
 
-function ExpensiveComponents(){
+function ExpensiveComponent(){
   const [count , setCount] = useState(0);
-  const [number ,setNumber] = useState(1);
+  const [number , setnumber] = useState(1)
 
   const expensiveCalculate = (num) => {
-    console.log("procesing...")
-    return num * 2
+    console.log("calculate");
+    return num * 2;
   }
 
   const result = useMemo(() => expensiveCalculate(number) , [number]);
 
   return (
     <div>
-      <h2>result : {result}</h2>
-      <button onClick={() => setCount(count + 1)}>tombol count</button>
-      <button onClick={() => setNumber(number + 1)}>tombol result</button>
+      <h1>result : {result}</h1>
+      <h1>count : {count}</h1>
+      <button onClick={() => setnumber(number + 1)}> tambah result</button>
+      <button onClick={() => setCount(count + 1)}>tambah count</button>
     </div>
   )
 }
 
-export default ExpensiveComponents
+export default ExpensiveComponent
